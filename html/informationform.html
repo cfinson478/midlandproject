@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Subscribe to Laughing Frog</title>
+        
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <style>
+            /*
+            @media screen and (max-width: 600px) {
+                img, footer {
+                    display: none;
+                }
+            }
+            */
+
+            @media screen and (max-width: 600px) {
+                header, footer {
+                    background-image:url("https://image.slidesharecdn.com/marketinglikeaboss-150222225147-conversion-gate01/95/marketing-like-a-boss-13-638.jpg?cb=1424688570")
+                }
+            }   
+        </style>   
+
+        <script>
+            $(document).ready(function(){
+                $(".btn").click(function(){
+                    $(".col-8").text("Thank You!");
+                    $(".col-8").css({"background-color": "lightgreen", "font-size": "36px", "font-weight": 400});
+                    $(".testing").hide();
+                })
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $(".popUp").click(function () {
+                    setTimeout(function () {
+                    alert("hello"); }, 3000);
+                });
+            });
+        </script>
+    
+    </head>
+      
+    <header>
+        <div>
+            <img class="testing" src="http://www.ivoryresearch.com/wp-content/uploads/2016/07/banner_redphone.jpg" alt="Contact Us" width="100%">
+        </div>
+    </header>
+
+    <body>
+        
+        <div class="col-8" style="margin-top: 50px">
+            <form>
+                <div class="form-group">
+                    <label for="inputName" class="col-form-label">First Name</label>
+                    <input type="text" class="form-control" id="inputFirstname" placeholder="John">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputName" class="col-form-label">Last Name</label>
+                    <input type="text" class="form-control" id="inputLastname" placeholder="Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputAddress" class="col-form-label">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputAddress2" class="col-form-label">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity" class="col-form-label">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="inputState" class="col-form-label">State</label>
+                        <select id="inputState" class="form-control">Choose</select>
+                    </div>
+
+                    <div class="form-group col-md-2">
+                        <label for="inputZip" class="col-form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+
+                    <div class="form-group col-md-8">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <label for="inputPhone" class="col-form-label">Phone</label>
+                        <input type="text" class="form-control" id="inputPhone" placeholder="000-000-0000">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    Do you want to get email updates from us?
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> No
+                        </label>
+                    </div>
+                </div>
+
+                <p>Click the button to wait 3 seconds, then alert "Hello".</p>
+
+                <button class="popUp">Try it</button>
+                        
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+    </body>
+
+    <hr>
+    <footer>
+        <div align="center" class="phone">
+            <a class="phone">PHONE</a> <br>
+            <a href="tel:+80041HAHAFROG">Call 1-800-41HAHAFROG today!</a>
+        </div>
+    </footer>
+
+</html>

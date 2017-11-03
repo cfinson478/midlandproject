@@ -1,0 +1,270 @@
+/*
+
+.hello:hover{
+    font-size: 24px;
+    color: blue;
+    cursor: pointer;
+}
+
+.carrie{
+    border: 10px dashed purple;
+    padding: 15px;
+    font-size: 27px;
+    background-color: white;
+    color: darkred
+}
+
+.phone{
+    font-size: 14px;
+    background-color: lightgreen;
+    color: black;
+    padding: 5px;
+    margin: 8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: darkpurple;
+}
+h3{
+    padding: 15px;
+    color: pink;
+    font-size: 36px;
+    border-bottom: 40px dotted white;
+}
+
+h3:hover {
+    background-color: purple;
+}
+
+h2 {
+    padding: 10px 3px 10px 3px;
+    border: 6px double darkblue;
+    margin: 6px 0 6px 0;
+}
+
+body {
+    margin: 40px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    padding: 40px;
+    font-size: 150px;
+}
+
+.blackBox {
+    background-color: lightgreen;
+    color: white;
+    height: 200px;
+    border: 2px solid lightgreen;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.whiteBox {
+    background-color: white;
+    color: lightgreen;
+    height: 200px;
+    border: 2px solid lightgreen;
+    text-align: center;
+    padding-top: 20px;
+}
+
+ul {
+    padding: 0 0 0 50px;
+}
+
+/*
+.nav {
+    padding-left: 5;
+}
+
+.nav a {
+    color: purple;
+    text-decoration: none;
+}
+
+.nav a li {
+    display: inline;
+}
+
+.nav {
+    padding-top: 40px;
+}
+
+.romeo {
+    color: red;
+}
+
+@media only screen and (min-width: 600px) {
+    .image{
+        background-image:url("http://www.ivoryresearch.com/wp-content/uploads/2016/07/banner_redphone.jpg");
+    }
+}
+@media only screen and (max-width: 600px){
+    .image{
+        background-image:url("https://image.slidesharecdn.com/marketinglikeaboss-150222225147-conversion-gate01/95/marketing-like-a-boss-13-638.jpg?cb=1424688570");
+    }
+}
+*/
+
+/* 10/4/17 new css code for chania page */
+
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: #1F077A;
+    color: #ffffff;
+    padding: 15px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #DF620B;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #F18F4B;
+    color: #000
+}
+.trainBanner{
+    margin: 0px 0px 10px 0px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);  
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+div.transbox {
+    padding: 30px 0px 30px 0px;
+    margin: 60px;
+    background-color: rgba(255, 255, 255, 0.40);
+    border: 2px solid #090461;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.36), 0 1px 2px rgba(0,0,0,0.48);
+}
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #090461;
+}
+table, thead, tr, td{
+    border: 1px solid black;
+    padding: 2px;
+}
+.animatedBox{
+    background: darkred;
+    height: 100px;
+    width: 200px;
+    border-radius: 15px;
+    position: absolute;
+}
+.aside {
+    background-color: #DF620B;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.footer {
+    background-color: #090461;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+.whoWeAre {
+    background-color: #090461;
+    color: white;
+    border: 2px solid #090461;
+    margin-left: 1%;
+    padding-left: 1%;
+}
+.about {
+    padding: 15, 0, 0, 15;
+    margin-left: 2%;
+}
+.popUp {
+    padding-left: 2%;
+    margin-bottom: 15px;
+    background-color: #DF620B;
+    color: white;
+}
+
+.arrivals {
+    background-color: #090461;
+    color: white;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.schedules{
+    background-color: #DF620B;
+    color: white;
+    font-weight: 24px;
+    padding-left: 6px;
+}
+
+.emptyTableData{
+    background-color: #807eb3;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Chania Train Schedule </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- jQuery stuff -->
+    <script>
+        $(document).ready(function () {
+            $("#popUp").click(function () {
+                var wait_time = 2;
+                var cost = 6;
+                var tax = 0.20;
+
+                var totalCost = cost * wait_time;
+                var totalCost = cost + (cost * tax);
+
+                setTimeout(function () {
+                    alert("Wait Time: " + wait_time + " hours" + "\nCost: " + cost.toFixed(2) + "\nTax: " + tax.toFixed(2)
+                        + "\nTotal Cost: " + totalCost.toFixed(2));
+                }, 500);
+            });
+        });        
+    </script>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Chania Train Lines</h1>
+    </div>
+
+    <div class="row">
+
+        <div class="col-3 col-m-3 menu">
+            <ul>
+                <li>Departure/Arrival Info</li>
+                <li>The Route</li>
+                <li>Train Essentials</li>
+                <li>The Destination</li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-m-9">
+            <h1 class="schedules">Train Schedules</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th> </th>
+                        <th>Train #</th>
+                        <th>City</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Arrivals-->
+                    <tr>
+                        <td class="arrivals">Arrivals</td>
+                        <td>1184</td>
+                        <td>Lincoln, NE</td>
+                        <td class="lincoln">10:28 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td class="emptyTableData"> </td>
+                        <td>771</td>
+                        <td>Denver, CO</td>
+                        <td class="denver">11:28 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td class="emptyTableData"> </td>
+                        <td>1042</td>
+                        <td>San Diego, CA</td>
+                        <td class="sanDiego">12:28 p.m.</td>
+                    </tr>
+
+                    <!--Departures-->
+                    <tr>
+                        <td class="arrivals">Departures</td>
+                        <td>1184</td>
+                        <td>Lincoln, NE</td>
+                        <td class="lincoln">10:58 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td class="emptyTableData"> </td>
+                        <td>771</td>
+                        <td>Denver, CO</td>
+                        <td class="denver">11:58 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td class="emptyTableData"> </td>
+                        <td>1042</td>
+                        <td>San Diego, CA</td>
+                        <td class="sanDiego">12:58 p.m.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <button type="submit" id="popUp" class="btn btn-primary btn-lg">Get Parking Info</button>
+
+    <footer>
+        <div class="footer">
+            <h5>Chania Train Lines, Omaha, NE
+                <br> 1-800-1CHANIA
+                <br> schedules@chaniatrains.com</h5>
+        </div>
+    </footer>
+
+</body>
+
+</html>

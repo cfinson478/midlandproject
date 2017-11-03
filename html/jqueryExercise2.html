@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jquery Exercise</title>
+        
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery stuff -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".animatedBox").animate({"left": "350px", "top": "150px"});
+            });
+        });
+    </script>
+
+    <style> 
+        .animatedBox{
+            background: darkred;
+            height: 350px;
+            width: 250px;
+            border-radius: 15px;
+            position: absolute;
+        } 
+    </style>
+
+</head>
+
+<body>
+    <button>Click to animate</button>
+    <p>This box will move to the right.</p>
+    <div class="animatedBox">   </div>
+</body>
+
+</html>

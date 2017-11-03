@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chania Train Lines</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $(".btn1").click(function(){
+            $(".lincoln").text("Unavailable");
+        })
+    })
+</script>
+
+<script>
+    $(document).ready(function(){
+        $(".btn2").click(function(){
+            $(".denver").text("Available");
+        })
+    })
+</script>
+
+
+<script>
+        var price = 28.63;
+        var tax_rate = 0.07; //*% sales tax
+        var delivery = 3.50; // delivery charge
+        var package = 5.00; // package charge
+        
+        price = price + delivery + package
+        price = price + (price * tax_rate);
+        
+        $("#popUp").click(function(){
+          setTimeout(function(){ 
+           alert( price); }, 1000);   
+        }); 
+    </script>
+
+<script>
+    $(document).ready(function(){
+        $('#sale').click(function() {
+                var megasale = $('<p>Call 1-800-HAHAFROG for more info!</p>');
+            $('.bigsale').append(megasale);
+        $('#sale').remove();
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        $("#free").click(function(){
+            $(".ticket").text("Coming January 2018");
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        $(".popUp").click(function(){
+            var midland = {
+                "Price" : 25,
+                "Tax" : 0.09,
+                "Hotel" : 70,
+                "Transportation" : 20,
+                "Food" : 65,
+            };
+            setTimeout(function(){
+                alert("Price: " + midland.Price + "\nTax: " + midland.Tax + "\nHotel: " + midland.Hotel +
+                "\nTransportation: " + midland.Transportation + "\nFood: " + midland.Food); }, 500);
+        });
+    });        
+</script>
+
+</head>
+
+<body>
+
+<div class="header">
+  <h1>Chania Train Lines</h1>
+</div>
+
+<div class="row">
+
+<div class="col-3 col-m-3 menu">
+  <ul>
+    <li>Departure Info</li>
+    <li>The Route</li>
+    <li>Train Essentials</li>
+    <li>The Destination</li>
+  </ul>
+</div>
+
+<div class="col-6 col-m-9">
+  <h1>The Inaugural Trip</h1>
+  <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Destinations</th>
+            <th>Price</th>
+            <th>Availability</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Lincoln, NE</td>
+            <td class="lincoln">$50.00</td>
+            <td><button type="submit" class="btn1 btn-primary">Availability</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Denver, CO</td>
+            <td class="denver">$50.00</td>
+            <td><button type="submit" class="btn2 btn-primary">Availability</button></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>San Diego, CA</td>
+            <td class="sanDiego">$50.00</td>
+            <td><button type="submit" id="popUp" class="btn3 btn-primary">Availability</button></td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div class="col-3 col-m-12">
+  <div class="aside">
+      <div class="bigsale">
+        <h2>BIG SALE!</h2>
+            <p class="saleinfo">Select roundtrip fares <br> only $50!</p>
+        <button id="sale" type="submit" class="btn btn-primary">Get Sale Info</button>
+      </div>
+    
+      <div>
+        <h2 class="ticket">Get a <br>FREE TICKET<br> with purchase!</h2>
+        <button id="free" type="submit" class="btn btn-primary">Get Your Free Ticket</button>
+      </div>
+
+  </div>
+</div>
+
+<div>
+    <h2 class = "whoWeAre"> Who is Chania Train Lines? </h2>
+    <p class = "about">Just as many of us periodically update our own living spaces, 
+        the overhaul program is meant to create a more comfortable customer experience. 
+        Through a close study of customer feedback, the Amtrak design team zeroed in on 
+        a crisp, modern look and cleaner restrooms. The process of updating all cars 
+        should take about nine months and represents a nearly $17 million investment. 
+        By employing a strategic, phased approach, Amtrak will ensure uninterrupted train 
+        service for customers.</p>
+    
+    <button class="popUp">Learn More</button>
+
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Resize the browser window to see how the content responds to the resizing.</p>
+</div>
+
+</body>
+</html>
